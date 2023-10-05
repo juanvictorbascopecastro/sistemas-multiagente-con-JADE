@@ -47,7 +47,7 @@ public class MasterAgente extends Agent{
                     respuesta = message.createReply();
                     respuesta.setContent("CONFIRMACION!");
                     send(respuesta);
-                    Sumar();
+                    Operaciones();
                 } else {
                     System.out.println("Agente receptor informa: No recibio mensaje!");
                 }
@@ -76,7 +76,7 @@ public class MasterAgente extends Agent{
 		System.out.println("Hasta luego "+getAID().getName()+" terminado.");
 	}
     
-    private void Sumar() {
+    private void Operaciones() {
         if(num1 != 0 && num2 != 0) {
             myGui.LNumerosR.setText( num1 + " y " + num2 + "!!!!!");
             myGui.LSumaR.setText(Integer.toString(num1 + num2));

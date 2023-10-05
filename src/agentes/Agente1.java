@@ -14,6 +14,7 @@ public class Agente1 extends Agent {
     @Override
     protected void setup(){
         System.out.println("======================AGENTE 1==========================");
+        
         message = new ACLMessage(ACLMessage.INFORM);
         message.addReceiver(new AID("master", AID.ISLOCALNAME));
         num = getNumeroRandom();
